@@ -1,0 +1,259 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red38\green38\blue38;\red255\green255\blue255;
+\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;
+\csgray\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{lower-alpha\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{lower-alpha\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{lower-alpha\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww11520\viewh9380\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl0
+\f0\fs26 \cf0 {\listtext	a	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 CS333 - Project # 1 - README\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	b	}Lindsay Michels\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	c	}09/20/2023\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+
+\f1\fs28 \cf3 \cb4 \outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa200\partightenfactor0
+\ls2\ilvl0\cf3 Google sites url: https://sites.google.com/d/1R0WhixXvMlyUyjQUb6R_c4hJlPawyEcT/p/1ke1Bh7w-si-9G93JmPpt6vJbFiIB1_xJ/edit\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \cb1 \outl0\strokewidth0 \strokec2 Directory Layout:\
+Project01_lamich25/\
+|\
+\
+|\
+|__/task1.cpp\
+|__/task2.cpp\
+|__/task3.cpp\
+|__/task4.cpp\
+|__/task5.cpp\
+|__/README.txt.rtf\
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+
+\f1\fs28 \cf3 \cb4 \outl0\strokewidth0 \
+Task 1: In this task, we had to declare variables of all the different basic types in C and assign them values. We declared an unsigned char * and looked through how each data type is stored.\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa200\partightenfactor0
+\ls3\ilvl0\cf3 1a)Is the machine you are using a big-endian or little-endian machine?\
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+\cf3 \cb1 In big-endian, the most significant byte is stored at the lowest memory address and the least significant byte is stored at the highest address. This is simply flipped around for little endian. The machine I am using is little endian.\
+\cb4 \kerning1\expnd0\expndtw0 1b)  \expnd0\expndtw0\kerning0
+How does the program output tell you?\
+\cb1  My outputs have the least significant bytes all stored in the lower memory address, for example, \'91short\'92 \'9288 13\'92 represents 12345 in little endian, and for \'91long\'92, \'9279 DF 0D 86 48 70 00 00\'92 represents 123456789012345 in little endian as well because the least significant byte, \'9200\'92 is stored at the lower memory address.  \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf5 \kerning1\expnd0\expndtw0 \CocoaLigature0 MacBook-Pro-12:~ lindsay$ /Users/lindsay/CLionProjects/untitled/task1 ; exit;\
+char: 4C \
+short: 88 13 \
+int: 43 E3 3C 03 \
+long: 79 DF 0D 86 48 70 00 00 \
+float: 58 A9 A1 43 \
+double: BE 9F 1A 2F DD 4A 7A 40 \
+logout
+\f1\fs28 \cf3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+\cf3 \
+Task 2: This task was the same as task 1, except we looped through all the variables and printed out their memory accesses using the unsigned char *.\
+2a)\cb4 \kerning1\expnd0\expndtw0  \expnd0\expndtw0\kerning0
+What happens at the end of the process?\
+The process ends when it encounters a segmentation fault (a violation of restricted memory) or crashes. This is because the program is accessing memory beyond its bounds (the valid range allocated for a specific data structure).\cb1 \
+2b) \cb4 Can you find the variables defined in your C program?\cb1 \
+You can\'92t find the variables defined using this method because the program reads arbitrary memory locations that may not have the values of the variables I defined. Thus, finding the variables this way is not reliable. \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf5 \kerning1\expnd0\expndtw0 \CocoaLigature0 MacBook-Pro-12:~ lindsay$ /Users/lindsay/CLionProjects/untitled/task2 ; exit;\
+Index 0: 60\
+Index 1: 38\
+Index 2: 7A\
+Index 3: 6B\
+Index 4: 01\
+Index 5: 00\
+Index 6: 00\
+Index 7: 00\
+Index 8: 80\
+Index 9: 2C\
+Index 10: 81\
+Index 11: 04\
+Index 12: 01\
+Index 13: 00\
+Index 14: 2A\
+Index 15: 4C\
+Index 16: 65\
+Index 17: AA\
+Index 18: 60\
+Index 19: 54\
+Index 20: 52\
+Index 21: A7\
+Index 22: 0B\
+Index 23: 40\
+Index 24: 16\
+Index 25: 00\
+Index 26: 00\
+Index 27: 00\
+Index 28: 00\
+Index 29: 00\
+Index 30: 00\
+Index 31: 00\
+Index 32: D0\
+Index 33: 39\
+Index 34: 7A\
+Index 35: 6B\
+Index 36: 01\
+Index 37: 00\
+Index 38: 00\
+Index 39: 00\
+Index 40: 8C\
+Index 41: D0\
+Index 42: 80\
+Index 43: 04\
+Index 44: 01\
+Index 45: 00\
+Index 46: 00\
+Index 47: 00\
+Index 48: 00\
+Index 49: 00\
+Index 50: 00\
+Index 51: 00\
+Index 52: 00\
+Index 53: 00\
+Index 54: 00\
+Index 55: 00\
+Index 56: 00\
+Index 57: 00\
+Index 58: 00\
+Index 59: 00\
+Index 60: 00\
+Index 61: 00\
+Index 62: 00\
+Index 63: 00\
+Index 64: 00\
+Index 65: 00\
+Index 66: 00\
+Index 67: 00\
+Index 68: 00\
+Index 69: 00\
+Index 70: 00\
+Index 71: 00\
+Index 72: 00\
+Index 73: 00\
+Index 74: 00\
+Index 75: 00\
+Index 76: 00\
+Index 77: 00\
+Index 78: 00\
+Index 79: 00\
+Index 80: 00\
+Index 81: 00\
+Index 82: 00\
+Index 83: 00\
+Index 84: 00\
+Index 85: 00\
+Index 86: 00\
+Index 87: 00\
+Index 88: 00\
+Index 89: 00\
+Index 90: 00\
+Index 91: 00\
+Index 92: 00\
+Index 93: 00\
+Index 94: 00\
+Index 95: 00\
+Index 96: 38\
+Index 97: C1\
+Index 98: 86\
+Index 99: 04\
+logout\
+\
+Saving session...\
+...copying shared history...\
+...saving history...truncating history files...\
+...completed.\
+\
+[Process completed]\
+\
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+
+\f1\fs28 \cf3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+Task 3: This task required us to write a program that repeatedly allocates a small amount of memory in a loop and continues for a while. \
+3) When using the free statement, the memory usage increases temporarily when memory is allocated but goes back down after the free statement is used. Therefore, the memory usage stays relatively stable. On the other hand, if the free statement is commented out, the program will keep allocating memory without freeing it which will lead to the program consuming all available memory until it crashes.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf5 \kerning1\expnd0\expndtw0 \CocoaLigature0 MacBook-Pro-12:~ lindsay$ /Users/lindsay/CLionProjects/untitled/task3 ; exit;\
+Allocated 1048576 bytes of memory.\
+Freed the allocated memory.\
+Allocated 1048576 bytes of memory.\
+Freed the allocated memory.\
+Allocated 1048576 bytes of memory.\
+Freed the allocated memory.\
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+
+\f1\fs28 \cf3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \'85continues until crashes\
+Task 4: In this task, we made a struct with 3-4 variables. Then, we wrote a program to allocate memory for the struct and used unsigned char * to see how the memory is laid out. \
+4a) The sizeOf result does not always match our expectations because it is determined by the compiler. In this case, it does match, however, because \'91char a\'92 takes 1 bye (0x4C), \'91short b\'92 takes two byte (0x3930), and char c\'92 takes 1 byte (0x4D) . All of these sizes were returned in my program.\
+4b)Yes, there is a gaping the way MyStruct is laid out. For example, padding is added after \'91char a\'92 to ensure proper alignment for \'91short b\'92. This passing byte is 0x00 and is 1 byte long.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf5 \kerning1\expnd0\expndtw0 \CocoaLigature0 MacBook-Pro-12:~ lindsay$ /Users/lindsay/CLionProjects/untitled/task4 ; exit;\
+Memory layout of MyStruct:\
+Byte 0: 0x4C\
+Byte 1: 0x00\
+Byte 2: 0x39\
+Byte 3: 0x30\
+Byte 4: 0x4D\
+Byte 5: 0x00\
+Safe\
+logout\
+\
+Saving session...\
+...copying shared history...\
+...saving history...truncating history files...\
+...completed.\
+\
+[Process completed]
+\f1\fs28 \cf3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+\cf3 \
+Task 5: Lastly, we demonstrated whether the strcpy function is robust by passing a string that is too long to a local character array with a fixed length. \
+5) My program printed Hacked at the end because decision was 1 due to my string \'93My name is Lindsay Michels\'94 which is longer than the destination array. \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf5 \kerning1\expnd0\expndtw0 \CocoaLigature0 MacBook-Pro-12:~ lindsay$ /Users/lindsay/CLionProjects/untitled/task5 ; exit;\
+Memory layout of MyStruct:\
+Byte 0: 0x4C\
+Byte 1: 0x00\
+Byte 2: 0x39\
+Byte 3: 0x30\
+Byte 4: 0x4D\
+Byte 5: 0x00\
+Hacked\
+logout\
+\
+Saving session...\
+...copying shared history...\
+...saving history...truncating history files...\
+...completed.\
+\
+[Process completed]\
+\pard\tx720\pardeftab720\sa200\partightenfactor0
+
+\f1\fs28 \cf3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+}
